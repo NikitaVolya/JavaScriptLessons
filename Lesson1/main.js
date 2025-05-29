@@ -86,21 +86,25 @@ function try_input_number(text)
 //Exercice2
 function calc2()
 {
+    let execuation = '';
     let rep = try_input_number("number: ");
+    execuation += rep;
     do {
-        let operation_symbl = prompt("Operation or exit to end program");
+        let operation_symbl = prompt(`${execuation}\nOperation or exit to end program`);
         if (operation_symbl == "exit")
             break;
         let f = get_operation(operation_symbl);
-        let tmp_number = try_input_number("number:");
+        execuation = '(' + execuation + ')' + operation_symbl;
+        let tmp_number = try_input_number(`${execuation}\nnumber:`);
         rep = f(rep, tmp_number);
         if (!MyIsNumber(rep))
         {
             alert("Invalide input!")
             break;
         }
+        execuation += tmp_number;
     } while(true);
-    alert(`Result is ${rep}`)
+    alert(`${execuation}\nResult is ${rep}`)
 }
 
 calc2();
