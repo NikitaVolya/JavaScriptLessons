@@ -92,7 +92,7 @@ function calc2()
         if (operation_symbl == "exit")
             break;
         let f = get_operation(operation_symbl);
-        let tmp_number = try_input_number("Number:");
+        let tmp_number = try_input_number("number:");
         rep = f(rep, tmp_number);
         if (!MyIsNumber(rep))
         {
