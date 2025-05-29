@@ -47,17 +47,60 @@ function get_operation(symbl)
     }
 }
 
-// Exercice 1
+function MyIsNumber(n) {
+    // LOL function
+    return Number(n) + 0 == Number(n);
+}
+
+//Exercice1
 function calc()
 {
     let a = prompt("A: ");
-    let f_symbl = prompt("Operation: ")
     let b = prompt("B: ");
 
-    let f = get_operation(f_symbl);
-    
+    if (!MyIsNumber(a) || !MyIsNumber(b))
+    {
+        console.log("invalide input");
+    }
+    else
+    {
+        let f_symbl = prompt("Operation: ");
 
-    console.log('a + b =', f(Number(a), Number(b)));
+        let f = get_operation(f_symbl);
+        console.log(`a ${f_symbl} b = ${f(Number(a), Number(b))}`);
+    }
 }
 
-calc();
+function try_input_number(text)
+{
+    let rep;
+    do {
+        rep = prompt(text);
+        if (MyIsNumber(rep))
+            break;
+        alert("Is not a number!");
+    } while (true);
+    return Number(rep);
+}
+
+//Exercice2
+function calc2()
+{
+    let rep = try_input_number("number: ");
+    do {
+        let operation_symbl = prompt("Operation or exit to end program");
+        if (operation_symbl == "exit")
+            break;
+        let f = get_operation(operation_symbl);
+        let tmp_number = try_input_number("Number:");
+        rep = f(rep, tmp_number);
+        if (!MyIsNumber(rep))
+        {
+            alert("Invalide input!")
+            break;
+        }
+    } while(true);
+    alert(`Result is ${rep}`)
+}
+
+calc2();
