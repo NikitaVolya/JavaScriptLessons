@@ -32,7 +32,10 @@ function Exercice1() {
     const student = {
         user: {
             name: name_input,
-            age: age_input
+            age: age_input,
+            sayHi() {
+                console.log(`Hi, i\`m ${this.name}`);
+            }
         },
         adress: {
             city: city_input,
