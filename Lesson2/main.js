@@ -5,7 +5,9 @@ obj.name = 'Max';
 obj.age = 25;
 
 console.log(obj.name);
-console.log(obj);
+
+for(let temp in obj)
+    console.log(temp + ': ' + obj[temp]);
 
 delete obj.age;
 
@@ -45,4 +47,5 @@ function Exercice1() {
     student.Present();
 }
 
-Exercice1();
+let arr_str = ['65', '32', '11'];
+console.log(arr_str.join(', '));
