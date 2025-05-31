@@ -32,17 +32,17 @@ function Exercice1() {
     const student = {
         user: {
             name: name_input,
-            age: age_input,
-            sayHi() {
-                console.log(`Hi, i\`m ${this.name}`);
-            }
+            age: age_input
         },
         adress: {
             city: city_input,
             street: street_input
+        },
+        Present() {
+            console.log(`Hi, i\`m ${this.user.name}.\nage: ${this.user.age}\nadress: ${this.adress.street}, ${this.adress.city}`);
         }
     }
-    console.log(student);
+    student.Present();
 }
 
 Exercice1();
