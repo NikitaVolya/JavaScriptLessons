@@ -60,7 +60,7 @@ function exercice8() {
 }
 
 function exercice9() {
-    let number = Number(prompt('Введіть число: '));
+    let number = Number(prompt('Введіть число(з 3 цифр): '));
 
     if (number < 100 || number > 999)
     {
