@@ -61,16 +61,21 @@ function checkDate(day, month, year) {
 }
 
 function main() {
-    let day = Number(prompt('Day: '));
-    let month = Number(prompt('Month: '));
-    let year = Number(prompt('Year: '));
+    let input = prompt('Enter your date (like 13/03/2006): ');
+    let data = input.split('/');
+    
+    if (data.length != 3)
+    {
+        alert('Incorrect input format');
+        return;
+    }
 
-    let date_rep = checkDate(day, month - 1, year);
+    let date_rep = checkDate(data[0], data[1] - 1, data[2]);
 
     switch (date_rep)
     {
         case checkDateResult.Ok:
-            let date = new Date(year, month - 1, day);
+            let date = new Date(data[2], data[1] - 1, data[0]);
             alert(date);
             break;
         default:
