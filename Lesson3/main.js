@@ -32,7 +32,7 @@ function isNumber(n) {
 }
 
 function isLeapYear(year) {
-    return (year % 400 == 0) || (year % 4 == 0 && year % 100 != 0);
+    return (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
 }
 
 function getDays(month, year) {
@@ -72,7 +72,7 @@ function main() {
         return;
     }
 
-    let date_rep = checkDate(data[0], data[1] - 1, data[2]);
+    let date_rep = checkDate(data[0], data[1], data[2]);
 
     switch (date_rep)
     {
