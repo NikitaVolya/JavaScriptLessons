@@ -64,7 +64,7 @@ function checkDate(day, month, year) {
 }
 
 function splitDate(text) {
-    let symbls = ['.', '/', '-', ' '];
+    let symbls = ['.', '/', '-'];
     for (let i in symbls)
     {
         if (text.indexOf(symbls[i]) != -1)
@@ -74,26 +74,33 @@ function splitDate(text) {
 }
 
 function main() {
-    let data = splitDate(prompt('Enter your date (like 13/03/2006): '));
+    let date;
+
+    let cycle = true;
+    while (cycle) {
+        let data = splitDate(prompt('Enter your date (like 13/03/2006): ').replace(' ', ''));
+        
+        if (data == null || data.length != 3)
+        {
+            alert('Incorrect input format');
+            return;
+        }
+
+        let date_rep = checkDate(data[0], data[1], data[2]);
+
+        switch (date_rep)
+        {
+            case checkDateResult.Ok:
+                date = new Date(data[2], data[1] - 1, data[0]);
+                cycle = false;
+                break;
+            default:
+                alert(checkDateResult.ToString(date_rep));
+                break;
+        }
+    }
     
-    if (data == null || data.length != 3)
-    {
-        alert('Incorrect input format');
-        return;
-    }
-
-    let date_rep = checkDate(data[0], data[1], data[2]);
-
-    switch (date_rep)
-    {
-        case checkDateResult.Ok:
-            let date = new Date(data[2], data[1] - 1, data[0]);
-            alert(date.toDateString());
-            break;
-        default:
-            alert(checkDateResult.ToString(date_rep));
-            break;
-    }
+    alert(date.toDateString());
 }
 
 main();
