@@ -65,12 +65,12 @@ function main() {
     let month = Number(prompt('Month: '));
     let year = Number(prompt('Year: '));
 
-    let date_rep = checkDate(day, month, year);
+    let date_rep = checkDate(day, month - 1, year);
 
     switch (date_rep)
     {
         case checkDateResult.Ok:
-            let date = new Date(day, month, year);
+            let date = new Date(year, month - 1, day);
             alert(date);
             break;
         default:
