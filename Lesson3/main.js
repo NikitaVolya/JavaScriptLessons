@@ -1,4 +1,32 @@
 
+let checkDateResult = {
+    Ok: 0,
+    InvalideDay: 1,
+    InvalideMonth: 2,
+    InvalideDayMonth: 3,
+    InvalideYear: 4,
+    InvalideDayYear: 5,
+    InvalideMonthYear: 6,
+    InvalideDayMonthYear: 7,
+    ToString(result) {
+        rep = [];
+        switch (result) {
+            case 1: case 3: case 5: case 7:
+                rep.push('day');
+        }
+        switch (result) {
+            case 2: case 3: case 6: case 7:
+                rep.push('month');
+        }
+        switch (result) {
+            case 4: case 5: case 6: case 7:
+                rep.push('year');
+        }
+        return `Invalide ${rep.join(', ')}`;
+    }
+}
+
+
 function isNumber(n) {
     return Number(n) == n;
 }
@@ -8,6 +36,8 @@ function isLeapYear(year) {
 }
 
 function getDays(month, year) {
+    if (!isNumber(month) || !isNumber(year))
+        return 28;
     switch (month) {
         case 4: case 6: case 9: case 11:
             return 30;
@@ -20,35 +50,33 @@ function getDays(month, year) {
 }
 
 function checkDate(day, month, year) {
-    if (year < 0 || month < 1 || month > 12)
-        return false;
-    if (day < 1 || day > getDays(month, year))
-        return false;
-    return true;
+    rep = checkDateResult.Ok;
+    if (!isNumber(year) || year < 0)
+        rep += checkDateResult.InvalideYear;
+    if (!isNumber(month) || month < 1 || month > 12)
+        rep += checkDateResult.InvalideMonth;
+    if (!isNumber(day) || day < 1 || day > getDays(month, year))
+        rep += checkDateResult.InvalideDay;
+    return rep;
 }
 
 function main() {
-    let day = prompt('Day: ');
-    let month = prompt('Month: ');
-    let year = prompt('Year: ');
-    if (!isNumber(day) || !isNumber(month) || !isNumber(year))
+    let day = Number(prompt('Day: '));
+    let month = Number(prompt('Month: '));
+    let year = Number(prompt('Year: '));
+
+    let date_rep = checkDate(day, month, year);
+
+    switch (date_rep)
     {
-        alert('Invalide input!');
-        return;
+        case checkDateResult.Ok:
+            let date = new Date(day, month, year);
+            alert(date);
+            break;
+        default:
+            alert(checkDateResult.ToString(date_rep));
+            break;
     }
-
-    day = Number(day);
-    month = Number(month);
-    year = Number(year);
-
-    if (!checkDate(day, month, year))
-    {
-        alert('Invalide date!');
-        return;
-    }
-
-    let date = new Date(year, month - 1, day);
-    alert(date);
 }
 
 main();
