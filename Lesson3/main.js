@@ -46,6 +46,8 @@ function getDays(month, year) {
             return 31;
         case 2:
             return isLeapYear(year) ? 29 : 28;
+        default:
+            return 28;
     }
 }
 
