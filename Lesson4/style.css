@@ -1,0 +1,19 @@
+
+.container {
+    display: inline-block;
+    justify-content: center;
+    border: 2px solid ;
+    margin: 10px;
+}
+
+.container > * {
+    float: left;
+    margin: 5px;
+    font-size: medium;
+}
+
+.score {
+    color: rgb(255, 25, 0);
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: black;
+}
