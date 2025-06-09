@@ -1,3 +1,4 @@
+
 function set_range_event(rangeId, resultId, minValuePId, maxValuePId, minValue = 0, maxValue = 100) {
     const output_result = document.getElementById(resultId);
     const input_range = document.getElementById(rangeId);
