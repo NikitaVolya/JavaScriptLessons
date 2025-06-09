@@ -8,10 +8,11 @@
         .form {
             display: flex;
             flex-direction: column;
+            align-items: center;
             width: 40%;
             margin-left: 30%;
             background-color:aliceblue;
-            gap: 10px;
+            gap: 15px;
             padding: 30px 25px;
             border-radius: 10px;
             border: solid 1px;
@@ -26,30 +27,36 @@
         .field > * {
             width: 40%;
         }
+        .error-message {
+            color: red;
+            margin-left: 50%;
+        }
+        .form > button {
+            width: 80%;
+        }
     </style>
 </head>
 <body>
     <div class="form">
-        <div class="messageBox"></div>
         <div class="field">
             <label for="name">Name: </label>
             <input type="text" name="name" id="name">
-            <div class="errormessage"></div>
+            <div class="error-message"></div>
         </div>
         <div class="field">
             <label for="email">Email: </label>
             <input type="email" name="email" id="email">
-            <div class="errormessage"></div>
+            <div class="error-message"></div>
         </div>
         <div class="field">
             <label for="password">Password: </label>
             <input type="password" name="password" id="password">
-            <div class="errormessage"></div>
+            <div class="error-message"></div>
         </div>
         <div class="field">
             <label for="password-validation">Repet password: </label>
             <input type="password" name="password-validation" id="passwordValidation">   
-            <div class="errormessage"></div>     
+            <div class="error-message"></div>     
         </div>
         <button onclick="RegisterForm();">Register</button>
     </div>

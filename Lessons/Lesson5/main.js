@@ -5,12 +5,12 @@ function checkName()
     if (nameInput.value.length < 2)
     {
         nameInput.style.borderBlockColor = 'red';
-        nameInput.parentElement.lastChild.textContent = 'Name must contain at least 2 letters!';
+        nameInput.parentElement.lastElementChild.textContent = 'Name must contain at least 2 letters!';
         return false;
     }
 
     nameInput.style.borderBlockColor = 'canvas';
-    nameInput.parentElement.lastChild.textContent = '';
+    nameInput.parentElement.lastElementChild.textContent = '';
     return true;
 }
 
@@ -20,12 +20,12 @@ function checkEmail() {
     if (!(email.indexOf('@gmail.com') != -1 || email.indexOf('@yahoo.com') != -1) || email.includes(' '))
     {
         emailInput.style.borderBlockColor = 'red';
-        emailInput.parentElement.lastChild.textContent = 'Email is not valide!';
+        emailInput.parentElement.lastElementChild.textContent = 'Email is not valide!';
         return false;
     } 
     
     emailInput.style.borderBlockColor = 'canvas';
-    emailInput.parentElement.lastChild.textContent = '';
+    emailInput.parentElement.lastElementChild.textContent = '';
     return true;
 }
 
@@ -34,12 +34,12 @@ function checkPassword() {
     if (passwordInput.value.length < 6)
     {
         passwordInput.style.borderBlockColor = 'red';
-        passwordInput.parentElement.lastChild.textContent = 'Password must contain at least 6 letters!';
+        passwordInput.parentElement.lastElementChild.textContent = 'Password must contain at least 6 letters!';
         return false;
     }
 
     passwordInput.style.borderBlockColor = 'canvas';
-    passwordInput.parentElement.lastChild.textContent = '';
+    passwordInput.parentElement.lastElementChild.textContent = '';
     return true;
 }
 
@@ -49,12 +49,12 @@ function checkRepeatPassword() {
     if (passwordInput.value != repeatPasswordInput.value)
     {
         repeatPasswordInput.style.borderBlockColor = 'red';
-        repeatPasswordInput.parentElement.lastChild.textContent = 'Passwords are not the same!';
+        repeatPasswordInput.parentElement.lastElementChild.textContent = 'Passwords are not the same!';
         return false;
     }
     
     repeatPasswordInput.style.borderBlockColor = 'canvas';
-    repeatPasswordInput.parentElement.lastChild.textContent = '';
+    repeatPasswordInput.parentElement.lastElementChild.textContent = '';
     return true;
 }
 
