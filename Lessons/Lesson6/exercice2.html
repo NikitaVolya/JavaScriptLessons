@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 2</title>
+    
+</head>
+<body>
+    <p id="output"></p>
+
+    <script>
+        const output = document.getElementById('output');
+
+        document.addEventListener('keydown', (e) => {
+            console.log(e.keyCode);
+            switch (e.keyCode)
+            {
+                case 16: case 18:
+                    return;
+                case 13:
+                    output.innerHTML += '<br>';
+                    break;
+                case 8:
+                    output.innerHTML = output.innerHTML.slice(0, output.innerHTML.length - 1);
+                    break;
+                case 9:
+                    output.innerText += '     '
+                    break;
+                default:
+                    output.innerHTML += e.key;
+
+            }
+        });
+
+    </script>
+</body>
+</html>
