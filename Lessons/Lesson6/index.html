@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 6</title>
+    <script src="main.js"></script>
+    <style>
+        .info-block {
+            padding: 20px;
+            width: 400px;
+            text-align: center;
+            background-color: rgb(247, 178, 88);
+            color: rgb(255, 255, 255);
+            display: none;
+            box-shadow: 0px 0px 2px black;
+            text-shadow: 0px 0px 2px black;
+        }
+
+        #btn-event {
+            background-color: rgb(247, 178, 88);
+            border: 0px;
+            padding: 7px 30px;
+            color: white;
+            box-shadow: 0px 0px 2px black;
+            text-shadow: 0px 0px 2px black;
+        }
+
+        #info {
+            position: relative;
+            top: -33px;
+            left: -2px;
+        }
+
+        #content {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <h1 id='input-title'></h1>
+    <h1 id='input-press'></h1>
+    <div id="content">
+        <button id="btn-event">Info</button>
+        <div id="info" class="info-block">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel augue sit amet mi pharetra ullamcorper. Aenean nec efficitur erat, sit amet gravida felis. Etiam porttitor porttitor felis id efficitur. Donec nisi lacus, fermentum non sodales eget, fermentum sed mi. Nulla at est euismod, dictum sapien eget, mattis magna.</p>
+            <button>read more</button>
+        </div>
+    </div>
+</body>
+</html>
