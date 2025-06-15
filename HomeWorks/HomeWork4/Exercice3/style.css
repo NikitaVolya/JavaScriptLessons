@@ -1,0 +1,26 @@
+
+body {
+    margin: 0;
+}
+
+#field {
+    background-image: url("https://million-wallpapers.ru/wallpapers/6/61/553108272325636/pustoe-futbolnoe-pole-vid-sverxu.jpg");
+    background-size: 100vw 100vh;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+#ball {
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/049/883/193/small_2x/a-white-and-black-soccer-ball-isolated-on-transparent-background-png.png");
+    background-size: 100px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    
+    transition: all 0.4s ease-in-out;
+
+    left: 5vw;
+    top: 2vh;
+
+}

@@ -85,6 +85,5 @@ function RegisterForm() {
         return;
     if (!checkAllValide())
         return;
-    
     alert('Successful register!!!');
 }

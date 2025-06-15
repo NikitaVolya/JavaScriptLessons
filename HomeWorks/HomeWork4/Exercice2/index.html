@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            
+        }
+        #blackScreen {
+            left: 0px;
+            top: 0px;
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.75);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+        .content {
+            background-color: #e3ffff;
+            padding: 20px 45px;
+            font-family: Arial, 'Bold', sans-serif;
+            font-weight: bold;
+        }
+        .content button {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="blackScreen">
+        <div class="content">
+            <p>Hello from Modal Window!</p>
+            <button id="closeBtn">Close</button>
+        </div>
+    </div>
+    <button id="openBtn">Open modal</button>
+    
+    <script>
+        const openBtn = document.getElementById('openBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const modal = document.getElementById('blackScreen');
+
+        openBtn.addEventListener('click', () => {
+            modal.style.display = 'flex';
+        });
+        
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

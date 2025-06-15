@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWrok4 Exercice 1</title>
+    <style>
+        .window {
+            padding: 10px 20px;
+            width: max-content;
+            background-color: #fbf2e9;
+            outline: 5px solid rgb(119, 119, 119);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="window">
+        <p>Enter your name (name can't contain digits):</p>
+        <input type="text" name="input-name" id="inputName">
+    </div>
+
+    <script>
+        const name = document.getElementById('inputName');
+        name.addEventListener('input', (e) => {
+            if ('0' <= e.data && e.data <= '9')
+                name.value = name.value.slice(0, name.value.length - 1);
+        });
+    </script>
+</body>
+</html>
