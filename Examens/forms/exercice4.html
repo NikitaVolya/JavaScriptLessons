@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 4</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+<form id="colorForm" class="row">
+    <div class="w33">
+        <div class="row rgbInput">
+            <div class="colorTitle">R</div>
+            <input type="number" name="red" min="0" max="255" value="0" required>
+            <div class="colorTitle">G</div>
+            <input type="number" name="green" min="0" max="255" value="0" required>
+            <div class="colorTitle">B</div>
+            <input type="number" name="blue" min="0" max="255" value="0" required>
+        </div>
+    <button type="submit">Add color</button>
+    </div>
+</form>
+
+<div class="row-list form" id="colorContainer">
+</div>
+
+</body>
+</html>

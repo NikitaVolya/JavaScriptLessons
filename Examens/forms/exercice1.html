@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <form id="LoginForm">
+        <label for="login">Your login:</label>
+        <input type="text" name="login" required minlength="2">
+
+        <label for="password">Your password:</label>
+        <input type="password" name="password" required pattern="\w*" minlength="6" title="The password can contain all characters except spaces.">
+        
+        <div class="row">
+            <label for="rememberMe">Remember me</label>
+            <input type="checkbox" name="rememberMe">
+        </div>
+
+        <button type="submit">Sign In</button>
+        <a href="">Forgot password?</a>
+    </form>
+</body>
+</html>

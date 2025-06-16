@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 3</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form id="userInfo" class="row2">
+
+        <div class="cell">
+            <label for="firstname">Firstname: </label>
+            <input type="text" name="firstname" required minlength="2">
+        </div>
+
+        <div class="cell">
+            <label for="lastname">Lastname: </label>
+            <input type="text" name="lastname" minlength="2">
+        </div>
+
+        <div class="cell">
+            <label for="birthday">Birthday: </label>
+            <input type="date" name="birthday" required>
+        </div>
+
+        <div class="cell row">
+            <p>Gender: </p>
+            <input type="radio" name="gender" value="male" required>
+            <p>Male: </p>
+            <input type="radio" name="gender" value="female" required>
+            <p>Female: </p>
+        </div>
+
+        <div class="cell">
+            <label for="country">Country: </label>
+            <select name="country" required>
+                <option value="ukraine">Ukraine</option>
+                <option value="poland">Poland</option>
+                <option value="france">France</option>
+                <option value="usa">USA</option>
+            </select>
+        </div>
+
+        <div class="cell">
+            <label for="city">City: </label>
+            <select name="city" required>
+                <option value="city1">City 1</option>
+                <option value="city2">City 2</option>
+                <option value="city3">City 3</option>
+            </select>
+        </div>
+
+        <div class="cell row w100">
+            <p>Skills:</p>
+            <input type="checkbox" name="skills" value="html">
+            <p>HTML</p>
+            <input type="checkbox" name="skills" value="css">
+            <p>CSS</p>
+            <input type="checkbox" name="skills" value="js">
+            <p>JS</p>
+            <input type="checkbox" name="skills" value="php">
+            <p>PHP</p>
+            <input type="checkbox" name="skills" value="c++">
+            <p>C++</p>
+            <input type="checkbox" name="skills" value="java">
+            <p>JAVA</p>
+            <input type="checkbox" name="skills" value="c#">
+            <p>C#</p>
+        </div>
+
+        <button type="submit">Save</button>
+    </form>
+
+
+    <form id="userInfoTable">
+        <p>Result:</p>
+        <table>
+            <tr>
+                <th>Firstname</th>
+                <td id="firstnameCell">2</td>
+            </tr>
+            <tr>
+                <th>Lastname</th>
+                <td id="lastnameCell"></td>
+            </tr>
+            <tr>
+                <th>Birthday</th>
+                <td id="birthdayCell"></td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td id="genderCell"></td>
+            </tr>
+            <tr>
+                <th>Country</th>
+                <td id="countryCell"></td>
+            </tr>
+            <tr>
+                <th>City</th>
+                <td id="cityCell"></td>
+            </tr>
+            <tr>
+                <th>Skills</th>
+                <td id="skillsCell"></td>
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+
+form, .form {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 750px;
+
+    background-color: rgb(255, 235, 210);
+
+    padding: 10px 40px;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+
+    gap: 8px;
+}
+
+form {
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+form button {
+    width: 100%;
+    margin-top: 20px;
+}
+
+input[type=radio] {
+    width: 15px;
+}
+
+.row2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.row-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.cell {
+    
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 5px;
+}
+
+
+form input, button, select {
+    height: 25px;
+}
+
+form > a {
+    align-self:flex-end;
+    color: blue;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.w33 {
+    width: calc(100% / 3);
+}
+
+table, tr, th, td {
+    width: 100%;
+    
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px 5%;
+
+    height: 30px;
+
+    font-size: 1.2rem;
+}
+
+td {
+    font-size: 1.6rem;
+}
+
+th {
+    width: 40%;
+    text-align: left;
+}
+
+#userInfoTable {
+    display: none;
+}
+
+.colorCell {
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+    gap: 20px;
+}
+
+.colorRectangle {
+    display: block;
+    width: 33%;
+    margin: -10px;
+}
+
+.rgbInput {
+    gap: 0;
+    max-width: 100%;
+}
+
+.rgbInput input {
+    width: calc(100% / 3 - 10px);
+}
+
+.colorTitle {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#colorForm button {
+    margin-top: 0;
+    justify-self: center;
+}
+
+
+#questionForm input {
+    width: calc(100% - 140px);
+    float: right;
+}
+
+hr {
+    width: 100%;
+    border-top: 1px solid black;
+}
+
+.question b {
+  text-decoration: underline black;
+}
+
+.question {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1px;
+    margin-left: -20px;
+}
