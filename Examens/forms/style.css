@@ -71,7 +71,7 @@ form > a {
 }
 
 .w33 {
-    width: calc(100% / 3);
+    width: calc(100% / 3 - 40px);
 }
 
 table, tr, th, td {
