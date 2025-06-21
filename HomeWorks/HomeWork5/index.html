@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="validation.js"></script>   
+</head>
+<body>
+    <div class="form-container" id="registerForm">
+
+        <h1>Реєстрація</h1>
+
+        <div class="field">
+            <input type="text" name="name" id="nameField" placeholder="Ім`я">
+            <div class="error-message"></div>
+        </div>
+        <div class="field">
+            <input type="text" name="email" id="emailField" placeholder="Пошта">
+            <div class="error-message"></div>
+        </div>
+        <div class="field">
+            <input type="password" name="password" id="passwordField" placeholder="Пароль">
+            <div class="error-message"></div>
+        </div>
+        <div class="field">
+            <input type="password" name="repeatPassword" id="repeatPasswordField" placeholder="Підтвердити пароль">
+            <div class="error-message"></div>
+        </div>
+
+        <div class="field">
+            <button id="registerButton">Підтвердити</button>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="form-container" id="loginForm">
+        
+        <h1>Вхід</h1>
+
+        <div class="field">
+            <input type="text" name="email" id="loginEmailField" placeholder="Пошта">
+            <div class="error-message"></div>
+        </div>
+        <div class="field">
+            <input type="password" name="password" id="loginPasswordField" placeholder="Пароль">
+            <div class="error-message"></div>
+        </div>
+
+        <div class="field">
+            <button id="loginButton">Підтвердити</button>
+        </div>
+    </div>
+</body>
+</html>
