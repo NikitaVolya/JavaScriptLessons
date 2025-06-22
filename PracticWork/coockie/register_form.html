@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="utils.js"></script>
+    <script src="register.js"></script>
+</head>
+<body>
+    <form id="RegisterForm">
+        <h1 style="align-self: center;">Registration</h1>
+
+        <div class="column">
+            <label for="email">Email:</label>
+            <input type="text" name="email" required minlength="2">
+            <output class="errorMessage"></output>
+        </div>
+
+        <div class="column">
+            <label for="password">Your password:</label>
+            <input type="password" name="password" required minlength="6">
+            <output class="errorMessage"></output>
+        </div>
+
+        <div class="column">
+            <label for="repeatPassword">Repeat:</label>
+            <input type="password" name="repeatPassword" required minlength="6">
+            <output class="errorMessage"></output>
+        </div>
+
+        <button type="submit">Sign Up</button>
+        <br>
+    </form>
+</body>
+</html>
