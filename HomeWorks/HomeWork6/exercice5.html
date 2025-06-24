@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 5</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="exercice5.js"></script>
+</head>
+<body>
+    <form action="" class="content" id="presentForm">
+        <div class="row">
+            <label>Group:</label>
+            <select name="group" id="group">
+            </select>
+            <label>Lesson:</label>
+            <select name="lesson" id="lesson">
+            </select>
+            <button type="button" id="selectBtn">Select</button>
+        </div>
+        <hr>
+        <div id="workarea">
+            <div class="row" style="align-items: center;">
+                <p>Topic: </p>
+                <input type="text" name="topic" id="topic" style="height: 15px;" required>
+            </div>
+            <br>
+            <div class="row student-row">
+                <div class="w50">
+                    <p>Name</p>
+                </div>
+                <div class="w50">
+                    <p>Is present</p>
+                </div>
+            </div>
+            <hr>
+            <div id="students">
+                <div class="row student-row">
+                    <div class="w50">
+                        <p>Student 1</p>
+                    </div>
+                    <div class="w50">
+                        <input type="checkbox" name="present0" id="present0">
+                    </div>
+                </div>
+                <hr>
+                <div class="row student-row">
+                    <div class="w50">
+                        <p>Student 2</p>
+                    </div>
+                    <div class="w50">
+                        <input type="checkbox" name="present0" id="present0">
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <br><br>
+            <button type="submit" id="submitBtn" class="w100">Save</button>
+        </div>
+    </form>
+</body>
+</html>

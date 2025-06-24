@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 4</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="exercice4.js"></script>
+</head>
+<body>
+    <div class="content">
+        <form id="buyBookForm">
+            <div class="row">
+                <div class="message flexcolumn" style="width: calc(60% / 3); justify-content:space-between;">
+                    <img src="https://m.media-amazon.com/images/I/91dOB9d+zsL.jpg" alt="Book 1 cover" width="100%">
+                    <b>Learning JavaScript: JavaScript Essentials for Modern Application Development</b>
+                    <p>Ethan Brown</p>
+                    <p><b>16$</b></p>
+                    <button type="button" name="selectBook" onclick="setBook('Learning JavaScript: JavaScript Essentials for Modern Application Development')">Select</button>
+                </div>
+
+                <div class="message flexcolumn" style="width: calc(60% / 3); justify-content:space-between;">
+                    <img src="https://m.media-amazon.com/images/I/91-PASfiUVL._AC_UF1000,1000_QL80_DpWeblab_.jpg" alt="Book 2 cover" width="100%">
+                    <b>You Don't Know JS: Scope & Closures</b>
+                    <p>Kyle Simpson</p>
+                    <p><b>20$</b></p>
+                    <button type="button" name="selectBook" onclick="setBook('You Don\'t Know JS: Scope & Closures')">Select</button>
+                </div>
+
+                <div class="message flexcolumn" style="width: calc(60% / 3); justify-content:space-between;">
+                    <img src="https://m.media-amazon.com/images/I/61iIj8pUQGL._AC_UF1000,1000_QL80_.jpg" alt="Book 3 cover" width="100%">
+                    <b>JavaScript and JQuery: Interactive Front-End Web Development</b>
+                    <p>Jon Duckett</p>
+                    <p><b>22$</b></p>
+                    <button type="button" name="selectBook" onclick="setBook('JavaScript and JQuery: Interactive Front-End Web Development')">Select</button>
+                </div>
+
+                <div class="message flexcolumn fr" style="width: 40%; justify-content:space-between;">
+                    <div class="row flex-left">
+                        <label for="book">Book:</label>
+                        <input type="text" id="book" name="book" disabled>
+                    </div>
+                    <div class="row flex-left">
+                        <label for="quantity">Quantity:</label>
+                        <input type="text" id="quantity" name="quantity" required pattern="\d+">
+                    </div>
+                    <div class="row flex-left">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="row flex-left">
+                        <label for="address">Delivery address:</label>
+                        <textarea id="address" name="address" rows="2" style="height: 100px" required></textarea>
+                    </div>
+                    <div class="row flex-left">
+                        <label for="date">Delivery date:</label>
+                        <input type="text" id="date" name="date" required pattern="\d\d.\d\d.\d\d\d\d">
+                    </div>
+                    <div class="row flex-left">
+                        <label for="comment">Comment:</label>
+                        <textarea id="comment" name="comment" rows="2" style="height: 100px"></textarea>
+                    </div>
+                    <button type="submit">Buy</button>
+                </div>
+            </div>
+        </form>
+        <div class="content" id="resultField" style="display: none;">
+        <b>Result:</b>
+        <div style="border: 1px solid; padding: 10px;" id="textField" class="row">
+            
+        </div>
+    </div>
+    </div>
+</body>
+</html>

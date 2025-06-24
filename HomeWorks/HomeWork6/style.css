@@ -1,0 +1,107 @@
+
+body {
+    margin: 0;
+}
+
+.content {
+    background-color: #fbf2e9;
+    padding: 20px;
+}
+
+.flexcolumn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.content > b {
+    text-align: center;
+}
+
+.message {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.message > p {
+    padding-left: 10px;
+}
+
+
+.border-btm {
+    border-bottom: 1px solid black;
+}
+
+.flex-sb {
+    justify-content: space-between;
+}
+
+.flex-left {
+    justify-content: left;
+}
+
+.content input[type=text], textarea {
+    width: 82%;
+}
+
+.fr {
+    text-align: left;
+}
+
+.fr label {
+    width: 18%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.w100 {
+    width: 100%;
+}
+
+button {
+    padding: 2px 20px;
+}
+
+.student-row {
+    height: 19px; 
+    align-items: center; 
+    padding-left: 20px;
+}
+
+#places {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 45px;
+    width: 96%;
+    justify-content: left;
+    align-content: start;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    gap: 1px;
+}
+
+.cell {
+    display: flex;
+    width: calc(100% / 13);
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid;
+}

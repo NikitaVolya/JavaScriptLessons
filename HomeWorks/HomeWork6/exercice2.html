@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="exercice2.js"></script>
+</head>
+<body>
+    <form id="questionForm" class="content flexcolumn">
+        <div class="row">
+            <p id="questionNumber">1)</p>
+            <p name="question" id="questionField">test</p>
+        </div>
+        <div class="row flex-left">
+            <input type="radio" name="answer" id="answerField" value="0" required>
+            <label for="answer" id="answerText1">1</label>
+        </div>
+        <div class="row">
+            <input type="radio" name="answer" id="answerField" value="1" required>
+            <label for="answer" id="answerText2">1</label>
+        </div>
+        <button type="submit" id="submitButton">next</button>
+    </form>
+    <output class="content" id="outputField" style="display: none;"></output>
+</body>
+</html>

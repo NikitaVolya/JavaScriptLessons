@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="exercice1.js"></script>
+    
+</head>
+<body>
+    <form action="" class="content flexcolumn" id="chatForm">
+
+        <div id="message-list" class="flexcolumn">
+            <div class="message">
+                <div class="row flex-sb border-btm">
+                    <p>Name</p>
+                    <p class="fright">10:05:00 22.03.2018</p>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </div>
+
+        <b>Add new message</b>
+        <div class="row fr">
+            <label for="name">Your name: </label>
+            <input type="text" name="name" id="nameField" required>
+        </div>
+        <div class="row fr">
+            <label for="message">Your message:</label>
+            <textarea type="text" name="message" id="messageField" required></textarea>
+        </div>
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>

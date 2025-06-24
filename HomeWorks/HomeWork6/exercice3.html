@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="exercice3.js"></script>
+</head>
+<body>
+    <form class="content flexcolumn" id="decorationForm">
+        <div class="row" style="flex-wrap: wrap; width: 100%; justify-content:center;">
+            <input type="checkbox" name="bold" id="bold">
+            <label for="bold">Bold</label>
+
+            <input type="checkbox" name="underline" id="underline">
+            <label for="underline">Underline</label>
+
+            <input type="checkbox" name="italic" id="italic">
+            <label for="italic">Italic</label>
+
+            <input type="radio" name="justify" value="left">
+            <label for="justify">Left</label>
+
+            <input type="radio" name="justify" value="right">
+            <label for="justify">Right</label>
+
+            <input type="radio" name="justify" value="center" checked>
+            <label for="justify">Justify</label>
+        </div>
+        <textarea name="text" id="text" style="width: 100%; min-height: 100px;" required></textarea>
+        <button type="submit">Show text</button>
+    </form>
+
+    <div class="content" id="resultField" style="display: none;">
+        <b>Result:</b>
+        <div style="border: 1px solid; padding: 10px;" id="textField" class="row">
+            jsdsdasdasdasdasd
+        </div>
+    </div>
+</body>
+</html>
