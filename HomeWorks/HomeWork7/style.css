@@ -1,0 +1,56 @@
+
+body {
+    background-color: #fbf2e9;
+}
+
+#colorForm {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#colorForm p {
+    text-align: center;
+    font-weight: bolder;
+}
+
+#colorForm input, select {
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: larger;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#colorsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.colorContainer {
+    width: calc(33.33% - 90px);
+    text-align: center;
+    padding: 18px 40px;
+}
+
+.colorData {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: smaller;
+    padding: 5px 20px;
+}
+
+.colorData b {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: lighter;
+}
+
+.colorData p {
+    margin: 10px 0 0 0;
+    font-size: 0.7rem;
+}

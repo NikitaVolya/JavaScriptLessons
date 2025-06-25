@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Work</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <form id="colorForm">
+        <p>Create new color</p>
+        <label for="name">Color: </label>
+        <input type="text" name="name" required>
+        <label for="type">Type: </label>
+        <select name="type">
+            <option value="rgb">RGB</option>
+            <option value="rgba">RGBA</option>
+            <option value="hex">HEX</option>
+        </select>
+        <label for="code">Code:</label>
+        <input type="text" name="code" required>
+        <button type="submit">Save</button>
+    </form>
+    <h1>All colors</h1>
+    <div id="colorsContainer">
+        
+    </div>
+    
+</body>
+</html>
