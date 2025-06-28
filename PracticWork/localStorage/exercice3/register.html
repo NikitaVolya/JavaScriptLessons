@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="utils.js"></script>
+    <script src="register.js"></script>   
+</head>
+<body>
+    <div class="form-container" id="registerForm">
+
+        <h1>Реєстрація</h1>
+
+        <div class="field">
+            <input type="text" name="name" id="nameField" placeholder="Ім`я" required>
+            <div class="error-message"></div>
+        </div>
+        <div class="field">
+            <input type="password" name="password" id="passwordField" placeholder="Пароль" required>
+            <div class="error-message"></div>
+        </div>
+        <div class="field">
+            <input type="password" name="repeatPassword" id="repeatPasswordField" placeholder="Підтвердити пароль" required>
+            <div class="error-message"></div>
+        </div>
+
+        <div class="field">
+            <button id="registerButton">Підтвердити</button>
+        </div>
+        <a href="/PracticWork/localStorage/exercice3/login.html">вхід</a>
+    </div>
+</body>
+</html>

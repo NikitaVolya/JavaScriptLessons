@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamers shop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="row">
+            <label for="order">Order by: </label>
+            <select id="order" onchange="renderItems([])">
+                <option value="none"></option>
+                <option value="older_au">oldest in au</option>
+                <option value="older_eu">oldest in eu</option>
+                <option value="older_jp">oldest in jp</option>
+                <option value="older_na">oldest in na</option>
+                <option value="newest_au">newest in au</option>
+                <option value="newest_eu">newest in eu</option>
+                <option value="newest_jp">newest in jp</option>
+                <option value="newest_na">newest in na</option>
+            </select>
+        </div>
+        
+        <div class="row">
+            <input type="text" id="searchName" placeholder="search">
+            <button id="searchBtn">Search</button>
+        </div>
+    </div>
+    <div class="sidewrapper">
+        <b>Games series</b>
+        <ol id="seriesList">
+
+        </ol>
+    </div>
+    <div id="itemsContainer">
+        
+    </div>
+</body>
+</html>
