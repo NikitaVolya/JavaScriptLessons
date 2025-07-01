@@ -14,7 +14,7 @@ function addItem(item) {
         <div class="item">
             <h1 class="title">${item.name}</h1>
             <img src="${item.image}" alt="${item.name}">
-            <b>type: Figure</b>
+            <b>type: ${item.type}</b>
             <div class="dates">
                 Release:	
                 <p>au: ${item.release.au?? ' '}</p>
